@@ -1,3 +1,4 @@
+/* default page */
 *{
     margin: 0;
     padding: 0;
@@ -101,4 +102,27 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+/* home page */
+.men_slide{
+    
+    padding: 20px;
+    height: 500px;
+    width: auto;
+    background-image: url(../assets/men_bg.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+.men_slide:hover{
+    opacity: 0.9;
+}
+
+/* register page */
+.form{
+    background-color: black;
+    color: white;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
