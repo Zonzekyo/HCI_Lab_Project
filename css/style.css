@@ -104,12 +104,6 @@
     background-color: #3e8e41;
 }
 
-@media screen and (min-width: 800px) {
-    body {
-      background-color: lavender;
-    }
-  }
-
 /* home page */
 .men_slide{
     
