@@ -36,15 +36,18 @@
         <h1>Register</h1>
     </div>
     <div class="form_register">
-        <form action="">
-            <label for="fname">Tell us your name:</label><br>
-            <input type="text" id="fname" name="fname" value="John Pantau" size="50"><br><br>
+        <form name="form_rgstr" action="#" id="form_rgstr">
             <label for="">Email Address</label><br>
-            <input type="email" id="email-address" value="John_Pantau@gmail.com" size="50"><br><br>
+            <input type="text" id="email-address" name="email-address" value="John_Pantau@gmail.com" size="50"><br><br>
+            <label for="fname">Password</label><br>
+            <input type="password" id="password" name="password" value="password" size="50"><br><br>
             <label for="">Address</label><br>
             <div class="address">
-                <input type="text" id="Address" value="8615 Carson St.Richardson, TX 75080" size="50"><br><br>
+                <input type="text" id="Address" name="Address" value="8615 Carson St.Richardson, TX 75080" size="50"><br><br>
             </div>
+            <label for="">Date of birth</label><br>       
+            <input type="date" name="DOB" id="DOB" class="dob">
+            <br><br>
             <label for="">Gender</label><br><br>
             <div class="gender">
                 <div class="male">
@@ -61,13 +64,12 @@
                 </div>                    
             </div>
             <br>
-            <label for="">Date of birth</label><br>       
-            <input type="date" name="DOB" id="DOB" class="dob">
-            <br><br>
+            <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
             <div class="submit">
                 <input type="submit" id="submit" class="submit-button">
             </div>
         </form>
     </div>
+    <script src="../js/script.js"></script>
 </body>
 </html>
