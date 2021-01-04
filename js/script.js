@@ -1,29 +1,29 @@
-var form = document.getElementById('form_rgstr');
-function validateForm() {
-    var email = document.getElementById["email-address"].value;
-    var atSymbol = emailToTest.indexOf("@");
-    if(atSymbol < 1) return false;
-    } else {
+var slideIndex = 1;
+showSlides(slideIndex);
 
-        var parts = email.split('@');
-        var domain = parts[1];
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-        if (domain.indexOf('.') == -1) {
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-            alert('Not a valid e-mail address');
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
-        } else {
-
-            var domainParts = domain.split('.');
-            var ext = domainParts[1];
-
-            if (ext.length > 4 || ext.length < 2) {
-
-                alert('Not a valid e-mail address');
-            }
-        }
-    }
-    alert('Valid???');
-  } 
-
-  form.addEventListener('submit', validateForm);

@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 
 .header{
@@ -78,7 +79,6 @@
     position: absolute;
         padding: 0 20px 0 0;
         background-color: #4CAF50;
-    /* min-width: 160px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -201,6 +201,15 @@
     .responsive {
         width: 48%;
     }
+    .slideshow-container img{
+        max-width: 500px;
+        max-height: 300px;
+        position: relative;
+        margin: auto;
+    }.next {
+        margin-right: 17%;
+        border-radius: 3px 0 0 3px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -213,4 +222,102 @@
     .responsive {
         width: 97%;
     }
+    .slideshow-container img{
+        max-width: 400px;
+        max-height: 200px;
+        position: relative;
+        margin: auto;
+    }.next {
+        margin-right: 42.5%;
+        border-radius: 3px 0 0 3px;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 600px;
+    max-height: 400px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.footer{
+    display: flex;
+    background-color: #4CAF50;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* center, flex-start, flex-end, space-evenly, space-between, space-around */
+}
+
+.socmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
 }
