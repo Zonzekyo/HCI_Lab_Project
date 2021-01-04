@@ -206,7 +206,8 @@
         max-height: 300px;
         position: relative;
         margin: auto;
-    }.next {
+    }
+    .next {
         margin-right: 17%;
         border-radius: 3px 0 0 3px;
     }
@@ -227,9 +228,14 @@
         max-height: 200px;
         position: relative;
         margin: auto;
-    }.next {
+    }
+    .next {
         margin-right: 42.5%;
         border-radius: 3px 0 0 3px;
+    }
+    .image-size{
+        min-width: 20%;
+        min-height: 20%;
     }
 }
 
@@ -308,7 +314,7 @@
     display: flex;
     background-color: #4CAF50;
     justify-content: center;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
     /* center, flex-start, flex-end, space-evenly, space-between, space-around */
@@ -320,4 +326,28 @@
     align-items: center;
     width: 55px;
     height: 55px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-image{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    padding: 0 0 0 100px;
+}
+
+.image-size{
+    width: 100%;
+    height: 100%;
 }
