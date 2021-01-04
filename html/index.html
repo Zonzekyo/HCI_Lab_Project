@@ -36,10 +36,44 @@
         </div>
     </div>
     
-    <div class="content">
-        <div class="men_slide">
-            
+<!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./../assets/Logo.png" class="slideshow-container">
         </div>
+    
+        <div class="mySlides fade">
+            <img src="./../assets/men_bg.jpg" class="slideshow-container">
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/">
+            <div class="socmed">
+                <img src="./../assets/facebook.png" alt="" height="70%" width="70%" window.location.href="facebook.com">
+            </div>
+        </a>
+        <a href="https://www.instagram.com/">
+            <div class="socmed">
+                <img src="./../assets/instagram.png" alt="" height="70%" width="70%" window.location.href="instagram.com">
+            </div>
+        </a>
+    
+    </div>
+
+  <script src="./../js/script.js"></script>
 </body>
 </html>
