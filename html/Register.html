@@ -36,39 +36,44 @@
         </div>
     </div>
     
-    <div class="intro_register">
-        <h1>Register</h1>
-    </div>
+    
     <div class="form_register">
-        <form action="index.html" onsubmit="validateForm(event)">
-            Email Address<br>
-            <input type="text" id="email-address" name="email-address" value="John_Pantau@gmail.com" size="50"><br><br>
-            Password<br>
-            <input type="password" id="password" name="password" value="password" size="50"><br><br>
-            Address<br>
-            <div class="address">
-                <input type="text" id="Address" name="Address" value="8615 Carson St.Richardson, TX 75080" size="50"><br><br>
-            </div>
-            Date of birth<br>       
-            <input type="date" name="DOB" id="DOB" class="dob">
-            <br><br>
-            Gender<br><br>
-            <div class="gender">
-                <div class="male">
-                    <input type="radio" id="male" name="gender" value="male">Male
+        <div class="intro_register">
+            <h1>Register</h1>
+        </div>
+        <div class="form_box">
+            <form action="index.html" onsubmit="validateForm(event)">
+                Email Address:<br><br>
+                <input type="text" id="email-address" name="email-address" value="John_Pantau@gmail.com" size="50"><br><br>
+                Password:<br><br>
+                <input type="password" id="password" name="password" value="password" size="50"><br><br>
+                Address:<br><br>
+                <div class="address">
+                    <input type="text" id="Address" name="Address" value="8615 Carson St.Richardson, TX 75080" size="50"><br><br>
                 </div>
-                <div class="female">
-                    <input type="radio" id="female" name="gender" value="female">Female
+                Date of birth: <br><br>       
+                <input type="date" name="DOB" id="DOB" class="dob">
+                <br><br>
+                Gender: <br><br>
+                <div class="gender">
+                    <div class="male">
+                        <input type="radio" id="male" name="gender" value="male">Male
+                    </div>
+                    <div class="female">
+                        <input type="radio" id="female" name="gender" value="female">Female
+                    </div>
+                    <div class="others">
+                        <input type="radio" id="other" name="gender" value="other">Other
+                    </div>                    
                 </div>
-                <div class="others">
-                    <input type="radio" id="other" name="gender" value="other">Other
-                </div>                    
-            </div>
-            <br>
-            <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
-            <br>
-            <button type="submit">Submit</button>
-        </form>
+                <br>
+                <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
+                <br><br>
+                <small>*We accept any methods of payment</small>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
